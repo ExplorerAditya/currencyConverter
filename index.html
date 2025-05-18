@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter - Convert your currency</title>
+  <link rel="stylesheet" href="./currencyConverter.css" />
+  <script defer src="./currencyConverter.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">MyCurrencyConverter</div>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Exchange_rate">Home</a></li>
+      <li><a href="https://www.currency.wiki/">About Us</a></li>
+      <li><a href="https://www.linkedin.com/in/aditya-singh-explorer/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Choose a currency to convert</h1>
+    <form id="currency-form">
+      <label for="quantity">Choose a quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter amount" required />
+
+      <label for="currency">Choose a currency:</label>
+      <select id="currency" name="currency">
+        <option value="INR">Indian Rupee</option>
+        <option value="USD">US Dollar</option>
+        <option value="EUR">Euro</option>
+      </select>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <div class="output">
+      <h2>Here is your converted value in different currencies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Code</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here via JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 MyCurrencyConverter. All rights reserved.
+  </footer>
+</body>
+</html>
